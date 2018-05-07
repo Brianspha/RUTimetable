@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<pages:PopupPage  xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+             xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup"
+              x:Class="RUTimetable.AddNewSubjectPopUp"
+              xmlns:local="clr-namespace:RUTimetable">
+  <StackLayout VerticalOptions="Center" BackgroundColor="White" HorizontalOptions="FillAndExpand" Padding="20, 20, 20, 20" >
+   <StackLayout>
+			<Label Text="Subject Name" TextColor="Black" />
+			<Entry x:Name="Subject" Placeholder="E.g. History 102"/>
+			<Picker Title="Select Day of Week" x:Name="Day" SelectedItem="Handle_Click_Day"/>
+			<Picker Title="Select Period" x:Name="Period" SelectedItem="Handle_Click_Period"/>
+			<Picker Title="Select Semester" x:Name="Semester" SelectedItem="Handle_Click_Semester"/>
+			<Button BackgroundColor="White" x:Name="Save" Clicked="Save_Clicked" Text="Save"/>
+     <Button Text="Close"  BackgroundColor="White" Clicked="OnClose"/>
+
+   </StackLayout>
+  </StackLayout>
+</pages:PopupPage>

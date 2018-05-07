@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+		x:Class="RUTimetable.UpdateSubjectTaken">
+	<ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <Label Text="Subject Name" TextColor="Black" />
+            <Entry x:Name="Subject" Placeholder="E.g. History 102"/>
+            <Picker Title="Select Day of Week" x:Name="Day" SelectedIndex="{Binding SelectedDayIndex }" ItemsSource="{Binding Days}" />
+            <Picker Title="Select Period" x:Name="Period"   SelectedIndex="{Binding Period }" ItemsSource="{Binding Periods}" />
+            <Picker Title="Select Semester" x:Name="Semester"  SelectedIndex="{Binding Semester }"  ItemsSource="{Binding Semesters}"/>
+            <Button BackgroundColor="White" x:Name="Save" Text="Save" Command="{Binding Save}" CommandParameter="{Binding Source={x:Reference Subject}, Path=Text}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

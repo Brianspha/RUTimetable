@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+			             xmlns:local="clr-namespace:RUTimetable"
+             xmlns:control="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.CarouselView"
+
+xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="RUTimetable.DaySummary">
+		 <StackLayout Orientation="Vertical">
+    <ListView x:Name="listView" 
+             HasUnevenRows="true" 
+              ItemsSource="{Binding Summary}" CachingStrategy="RecycleElement">
+      <ListView.ItemTemplate>
+<DataTemplate>
+		<local:ExtendedViewCell SelectedBackgroundColor="White">
+						<local:ExtendedViewCell.View>
+			<local:CardViewTemplateDaySummary/>
+							</local:ExtendedViewCell.View>
+			</local:ExtendedViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+  </StackLayout>
+</ContentPage>

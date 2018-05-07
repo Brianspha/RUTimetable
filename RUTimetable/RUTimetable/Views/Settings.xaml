@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RUTimetable.Views.Settings"
+              xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+             xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup"
+             Title="Settings">
+  <StackLayout VerticalOptions="Center" BackgroundColor="White" HorizontalOptions="FillAndExpand" Padding="20, 20, 20, 20" >
+    <StackLayout>
+      <Picker Title="Select no of minutes to be reminded before lecture starts" x:Name="seconds" SelectedItem="Handle_Click_Seconds"/>
+      <Button BackgroundColor="White"  Clicked="Save" Text="Save"/>
+      <Button Text="Close"  BackgroundColor="White" Clicked="OnClose"/>
+    </StackLayout>
+  </StackLayout>
+</pages:PopupPage>

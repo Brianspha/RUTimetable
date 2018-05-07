@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D9CCF690-2E4A-4BFC-911A-BB1062B3A2BA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RUTimetable</RootNamespace>
+    <AssemblyName>RUTimetable</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Classes\VenueFileReader.cs" />
+    <Compile Include="Classes\RemovePracorTutorialKeyWord.cs" />
+    <Compile Include="Helpers\Settings.cs" />
+    <Compile Include="Interfaces\ISaveAndLoad.cs" />
+    <Compile Include="Models\Settings.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Classes\CommaRemover.cs" />
+    <Compile Include="Classes\DayConverter.cs" />
+    <Compile Include="Classes\DayLayOutProvider.cs" />
+    <Compile Include="Classes\DayProvider.cs" />
+    <Compile Include="Classes\FirstPeriodProvider.cs" />
+    <Compile Include="Classes\GEOJSONTOJSONParser.cs" />
+    <Compile Include="Classes\GeoLocationProvider.cs" />
+    <Compile Include="Classes\LectureInformationProvider.cs" />
+    <Compile Include="Classes\MonthProvider.cs" />
+    <Compile Include="Classes\NullRemover.cs" />
+    <Compile Include="Classes\PeriodProvider.cs" />
+    <Compile Include="Classes\PinsSelectedEventArgs.cs" />
+    <Compile Include="Classes\ReminderObject.cs" />
+    <Compile Include="Classes\TimeProvider.cs" />
+    <Compile Include="Classes\TimeTableException.cs" />
+    <Compile Include="Classes\TimeTableGetter.cs" />
+    <Compile Include="Classes\TimeTableParser.cs" />
+    <Compile Include="Custom Map Pins\RoutePin.cs" />
+    <Compile Include="CustomRenderers\ExtendedViewCell.cs" />
+    <Compile Include="CustomRenderers\IOS\ExtendedViewCellRenderer.cs" />
+    <Compile Include="Databases\RealmDataBase.cs" />
+    <Compile Include="Databases\SchemaHandler.cs" />
+    <Compile Include="Helpers\MiscellaneousProvider.cs" />
+    <Compile Include="Helpers\NotificationHelper.cs" />
+    <Compile Include="Helpers\ReminderHelper.cs" />
+    <Compile Include="Helpers\SemesterChangeHandler.cs" />
+    <Compile Include="Models\Commands.cs" />
+    <Compile Include="Models\Day.cs" />
+    <Compile Include="Models\GeoJSONData.cs" />
+    <Compile Include="Models\LatLongHolder.cs" />
+    <Compile Include="Models\Semester.cs" />
+    <Compile Include="Models\Student.cs" />
+    <Compile Include="Models\Subject.cs" />
+    <Compile Include="Models\SubjectReminder.cs" />
+    <Compile Include="Models\VenueData.cs" />
+    <Compile Include="Models\VenueLocation.cs" />
+    <Compile Include="Pages\AddTimeTablePage.cs" />
+    <Compile Include="Tabbed View\MainPage.cs" />
+    <Compile Include="ViewModels\TKCustomMapBindingsViewModel.cs" />
+    <Compile Include="IOSAppView.xaml.cs">
+      <DependentUpon>IOSAppView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Carouselview.xaml.cs">
+      <DependentUpon>Carouselview.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Settings.xaml.cs">
+      <DependentUpon>Settings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\AddNewSubjectViewModel.cs" />
+    <Compile Include="ViewModels\AddRouteViewModel.cs" />
+    <Compile Include="ViewModels\AddTimetableViewModel.cs" />
+    <Compile Include="ViewModels\CampusMapPopUpViewModel.cs" />
+    <Compile Include="ViewModels\CardViewViewModel.cs" />
+    <Compile Include="ViewModels\CustomActivityIndicatorViewModel.cs" />
+    <Compile Include="ViewModels\DaySummaryViewModel.cs" />
+    <Compile Include="ViewModels\DayViewModel.cs" />
+    <Compile Include="ViewModels\FloatingActionButtonViewModel.cs" />
+    <Compile Include="ViewModels\MapsViewModel.cs" />
+    <Compile Include="ViewModels\SettingsViewModel.cs" />
+    <Compile Include="ViewModels\ViewOnCampusMapViewModel.cs" />
+    <Compile Include="Views\AddTimetable.xaml.cs" />
+    <Compile Include="Views\CardViewTemplate.xaml.cs" />
+    <Compile Include="Views\CardViewTemplateDaySummary.cs" />
+    <Compile Include="Views\DaySummary.xaml.cs" />
+    <Compile Include="Views\Friday.xaml.cs" />
+    <Compile Include="Views\LectureVenueLocatorPage.xaml.cs" />
+    <Compile Include="Views\Monday.xaml.cs" />
+    <Compile Include="Views\NewSubject.cs" />
+    <Compile Include="Views\PinsListPage.xaml.cs" />
+    <Compile Include="Views\Thursday.xaml.cs" />
+    <Compile Include="Views\Tuesday.xaml.cs" />
+    <Compile Include="Views\UpdateSubjectTaken.xaml.cs" />
+    <Compile Include="Views\ViewOnCampusMapPopUp.xaml.cs">
+      <DependentUpon>ViewOnCampusMapPopUp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Wednesday.xaml.cs" />
+    <Compile Include="App.xaml.cs" />
+    <Compile Include="Views\MapPageCS.cs" />
+    <Compile Include="Classes\CustomMap.cs" />
+    <Compile Include="Models\DirectionRequest.cs" />
+    <Compile Include="ViewModels\AddSubjectToVenueViewModel.cs" />
+    <Compile Include="ViewModels\AddNewVenueViewModel.cs" />
+    <Compile Include="Models\CustomPosition.cs" />
+    <Compile Include="ViewModels\MapsNewViewModel.cs" />
+    <Compile Include="Classes\SpaceRemover.cs" />
+    <Compile Include="Classes\NameRemover.cs" />
+    <Compile Include="Views\AddNewSubjectPopUp.xaml.cs">
+      <DependentUpon>AddNewSubjectPopUp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Firstrun.cs" />
+    <Compile Include="Views\GetDirectionsPopUp.xaml.cs">
+      <DependentUpon>GetDirectionsPopUp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\TKCustomMapViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Maps\RhodesMap.geojson" />
+    <EmbeddedResource Include="RhodesMap.geojson" />
+    <None Include="Tabbed View\MainPage.xaml" />
+    <None Include="packages.config" />
+    <None Include="FodyWeavers.xml" />
+    <None Include="Views\AddNewVenue.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </None>
+    <None Include="Views\AddNewVenue.xaml.cs">
+      <DependentUpon>AddNewVenue.xaml</DependentUpon>
+    </None>
+    <None Include="Views\MapMainPage.xaml" />
+    <None Include="Views\MapMainPage.xaml.cs" />
+    <None Include="Views\AddSubjectToVenue.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </None>
+    <None Include="Views\AddSubjectToVenue.xaml.cs">
+      <DependentUpon>AddSubjectToVenue.xaml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="Views\GetDirectionsPopUp.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Acr.UserDialogs, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Acr.UserDialogs.6.5.1\lib\netstandard1.1\Acr.UserDialogs.dll</HintPath>
+    </Reference>
+    <Reference Include="Acr.UserDialogs.Interface, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Acr.UserDialogs.6.5.1\lib\netstandard1.1\Acr.UserDialogs.Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="CarouselView.FormsPlugin.Abstractions, Version=1.0.6591.24917, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\CarouselView.FormsPlugin.5.2.0\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid10+Xamarin.iOS10\CarouselView.FormsPlugin.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack, Version=1.7.0.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\HtmlAgilityPack.1.7.0\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid+MonoTouch\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.11.0.1\lib\portable-net45+win8+wp8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PCLStorage, Version=1.0.2.0, Culture=neutral, PublicKeyToken=286fe515a2c35b64, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\PCLStorage.1.0.2\lib\portable-net45+wp8+wpa81+win8+monoandroid+monotouch+Xamarin.iOS+Xamarin.Mac\PCLStorage.dll</HintPath>
+    </Reference>
+    <Reference Include="PCLStorage.Abstractions, Version=1.0.2.0, Culture=neutral, PublicKeyToken=286fe515a2c35b64, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\PCLStorage.1.0.2\lib\portable-net45+wp8+wpa81+win8+monoandroid+monotouch+Xamarin.iOS+Xamarin.Mac\PCLStorage.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Geolocator, Version=4.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xam.Plugin.Geolocator.4.2.0\lib\netstandard1.0\Plugin.Geolocator.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Geolocator.Abstractions, Version=4.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xam.Plugin.Geolocator.4.2.0\lib\netstandard1.0\Plugin.Geolocator.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Permissions, Version=2.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Plugin.Permissions.2.2.1\lib\netstandard1.0\Plugin.Permissions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Permissions.Abstractions, Version=2.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Plugin.Permissions.2.2.1\lib\netstandard1.0\Plugin.Permissions.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Settings, Version=3.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xam.Plugins.Settings.3.1.1\lib\netstandard1.0\Plugin.Settings.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Settings.Abstractions, Version=3.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xam.Plugins.Settings.3.1.1\lib\netstandard1.0\Plugin.Settings.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Realm, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Realm.Database.3.0.0\lib\portable-net45+sl5+wp8+wpa81+win8+monoandroid+Xamarin.iOS10+monotouch+Xamarin.Mac\Realm.dll</HintPath>
+    </Reference>
+    <Reference Include="Realm.Sync, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Realm.3.0.0\lib\portable-net45+sl5+wp8+wpa81+win8+monoandroid+Xamarin.iOS10+monotouch+Xamarin.Mac\Realm.Sync.dll</HintPath>
+    </Reference>
+    <Reference Include="Refractored.FabControl, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Refractored.FloatingActionButtonForms.2.1.0\lib\netstandard1.0\Refractored.FabControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Rg.Plugins.Popup, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Rg.Plugins.Popup.1.0.4\lib\portable-win+net45+wp8+win8+wpa81\Rg.Plugins.Popup.dll</HintPath>
+    </Reference>
+    <Reference Include="Rg.Plugins.Popup.Platform, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Rg.Plugins.Popup.1.0.4\lib\portable-win+net45+wp8+win8+wpa81\Rg.Plugins.Popup.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Splat, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Splat.2.0.0\lib\netstandard1.1\Splat.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfAutoComplete.XForms, Version=16.1451.0.24, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Syncfusion.Xamarin.SfAutoComplete.16.1.0.24\lib\portable-win+net45+wp80+win81+wpa81\Syncfusion.SfAutoComplete.XForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Extensions">
+      <HintPath>..\..\packages\Microsoft.Net.Http.2.2.29\lib\portable-net45+win8+wpa81\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives">
+      <HintPath>..\..\packages\Microsoft.Net.Http.2.2.29\lib\portable-net45+win8+wpa81\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+      <HintPath>..\..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\netstandard1.1\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Notifications.Abstractions">
+      <HintPath>..\..\packages\Plugin.Notifications.4.0.2\lib\netstandard1.0\Plugin.Notifications.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Notifications">
+      <HintPath>..\..\packages\Plugin.Notifications.4.0.2\lib\netstandard1.0\Plugin.Notifications.dll</HintPath>
+    </Reference>
+    <Reference Include="Realm.DataBinding">
+      <HintPath>..\..\packages\Realm.DataBinding.1.2.0\lib\netstandard1.0\Realm.DataBinding.dll</HintPath>
+    </Reference>
+    <Reference Include="LocalNotifications.Plugin.Abstractions">
+      <HintPath>..\..\packages\Xam.Plugin.LocalNotifications.1.0.0.0\lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\LocalNotifications.Plugin.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="LocalNotifications.Plugin">
+      <HintPath>..\..\packages\Xam.Plugin.LocalNotifications.1.0.0.0\lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\LocalNotifications.Plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.LocalNotifications.Abstractions">
+      <HintPath>..\..\packages\Xam.Plugins.Notifier.2.1.0\lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10\Plugin.LocalNotifications.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.LocalNotifications">
+      <HintPath>..\..\packages\Xam.Plugins.Notifier.2.1.0\lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10\Plugin.LocalNotifications.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoJSON.Net">
+      <HintPath>..\..\packages\GeoJSON.Net.1.1.64\lib\netstandard1.1\GeoJSON.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="TK.CustomMap, Version=2.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\TK.CustomMap.2.0.1\lib\netstandard1.1\TK.CustomMap.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.Forms.2.5.1.527436\lib\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\..\packages\HtmlAgilityPack.1.6.16\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid+MonoTouch\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="TK.CustomMap">
+      <HintPath>..\..\packages\TK.CustomMap.2.0.0-pre3\lib\netstandard1.1\TK.CustomMap.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Maps, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.Forms.Maps.2.5.0.280555\lib\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.Maps.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.Forms.2.5.1.527436\lib\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.Forms.2.5.1.527436\lib\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.Xaml.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="App.xaml" />
+    <EmbeddedResource Include="Views\Wednesday.xaml" />
+    <EmbeddedResource Include="Views\UpdateSubjectTaken.xaml" />
+    <EmbeddedResource Include="Views\Tuesday.xaml" />
+    <EmbeddedResource Include="Views\Thursday.xaml" />
+    <EmbeddedResource Include="Views\PinsListPage.xaml" />
+    <EmbeddedResource Include="Views\Monday.xaml" />
+    <EmbeddedResource Include="Views\LectureVenueLocatorPage.xaml" />
+    <EmbeddedResource Include="Views\Friday.xaml" />
+    <EmbeddedResource Include="Views\DaySummary.xaml" />
+    <EmbeddedResource Include="Views\CardViewTemplateDaySummary.xaml" />
+    <EmbeddedResource Include="Views\CardViewTemplate.xaml" />
+    <EmbeddedResource Include="Views\AddTimetable.xaml" />
+    <EmbeddedResource Include="Views\AddNewSubjectPopUp.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Usercontrols\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\ViewOnCampusMapPopUp.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Settings.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="IOSAppView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Carouselview.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <Import Project="..\..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
+  <Import Project="..\..\packages\NETStandard.Library.2.0.1\build\NETStandard.Library.targets" Condition="Exists('..\..\packages\NETStandard.Library.2.0.1\build\NETStandard.Library.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\packages\Realm.Database.3.0.0\build\Realm.Database.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Realm.Database.3.0.0\build\Realm.Database.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Realm.3.0.0\build\Realm.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Realm.3.0.0\build\Realm.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Fody.3.0.3\build\Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Fody.3.0.3\build\Fody.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Xamarin.Forms.2.5.1.527436\build\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Xamarin.Forms.2.5.1.527436\build\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.targets'))" />
+  </Target>
+  <Import Project="..\..\packages\Realm.Database.3.0.0\build\Realm.Database.targets" Condition="Exists('..\..\packages\Realm.Database.3.0.0\build\Realm.Database.targets')" />
+  <Import Project="..\..\packages\Realm.3.0.0\build\Realm.targets" Condition="Exists('..\..\packages\Realm.3.0.0\build\Realm.targets')" />
+  <Import Project="..\..\packages\Fody.3.0.3\build\Fody.targets" Condition="Exists('..\..\packages\Fody.3.0.3\build\Fody.targets')" />
+  <Import Project="..\..\packages\Xamarin.Forms.2.5.1.527436\build\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.5.1.527436\build\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.targets')" />
+</Project>

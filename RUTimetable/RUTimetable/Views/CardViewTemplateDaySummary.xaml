@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RUTimetable.CardViewTemplateDaySummary">
+  <Frame IsClippedToBounds="True"
+         HasShadow="True"
+         BackgroundColor="White"  >
+    <Frame.OutlineColor>
+      <OnPlatform x:TypeArguments="Color"
+                  Android="Gray"
+                  iOS="Gray"/>
+    </Frame.OutlineColor>
+    <Frame.Margin>
+      <OnPlatform x:TypeArguments="Thickness"
+                  Android="15" iOS="15"/>
+    </Frame.Margin>
+    <Frame.Padding>
+      <OnPlatform x:TypeArguments="Thickness"
+                  Android="0" iOS="0"/>
+    </Frame.Padding>
+    <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">	
+			<Label x:Name="Current"   Text="{Binding FallsIn}" FontAttributes="Bold" YAlign="Center" LineBreakMode="TailTruncation" FontSize="16" XAlign="Center" TextColor="Black"><Label.LineBreakMode>
+            <OnPlatform x:TypeArguments="LineBreakMode"
+                        Android="NoWrap" iOS="TailTruncation"/>
+          </Label.LineBreakMode>
+			</Label>
+			    <Label x:Name="Name"   Text="{Binding Name}" FontAttributes="Bold" YAlign="Center" LineBreakMode="TailTruncation" FontSize="18" XAlign="Center" TextColor="Black"><Label.LineBreakMode>
+            <OnPlatform x:TypeArguments="LineBreakMode"
+                        Android="NoWrap" iOS="TailTruncation"/>
+          </Label.LineBreakMode>
+			</Label>
+			    <Label x:Name="Time" HorizontalOptions="Center"  VerticalOptions="Center"  Text="{Binding Time}" FontSize="14"  YAlign="Center" TextColor="Black"  XAlign="Center" LineBreakMode="TailTruncation"><Label.LineBreakMode>
+            <OnPlatform x:TypeArguments="LineBreakMode"
+                        Android="NoWrap" iOS="TailTruncation"/>
+          </Label.LineBreakMode>
+			</Label>
+			    <Label x:Name="Period" HorizontalOptions="Center" TextColor="Black" VerticalOptions="Center"  Text="{Binding Period}" FontAttributes="Bold" FontSize="16" XAlign="Center" YAlign="Center" ><Label.LineBreakMode>
+            <OnPlatform x:TypeArguments="LineBreakMode"
+                        Android="NoWrap" iOS="TailTruncation"/>
+          </Label.LineBreakMode>
+			</Label>
+			<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+			    <Label  Text="Remind Me" TextColor="Black" YAlign="Start" FontAttributes="Bold" FontSize="14" XAlign="Start" ><Label.LineBreakMode>
+            <OnPlatform x:TypeArguments="LineBreakMode"
+                        Android="NoWrap" iOS="TailTruncation"/>
+          </Label.LineBreakMode>
+				</Label>
+				<Switch x:Name="Switch" IsToggled="{Binding IsReminderSet}" IsEnabled="false"  HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Toggled="SwitchToggled" />  
+    </StackLayout>
+			<StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+			<Button   Clicked="ViewOnCampusMap" BackgroundColor="White" x:Name="View" Text="View On Campus Map" HorizontalOptions="Center"  VerticalOptions="Center" FontSize="16"   TextColor="Black" >
+			</Button>
+				</StackLayout>
+			</StackLayout>
+  </Frame>
+</ContentView>

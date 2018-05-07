@@ -1,0 +1,2174 @@
+{
+
+       {
+            "type": "Feature",
+            "properties": {
+                "name": "Union\/Steve Biko Building",
+                "desc": "Contains the SRC offices, as well as the counselling centre, The Oppidan Press and Activate. The Oppidan dining hall is in this building, as are the Union Labs which are on the bottom level down the stairs - one can print in colour here."
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.515999,
+                    -33.312872
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Drama Department",
+                "desc": "Also the Rhodes Theatre that is used extensively during the National Arts Festival in the June vac."
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.520642,
+                    -33.311836
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Humanities Office",
+                "desc": "For any queries about your Humanities degree, or any Humanities subject one can go here for help."
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.520481,
+                    -33.311289
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Politics and International Studies Department",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.519945,
+                    -33.311684
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Hamilton Building",
+                "desc": "Also known as the Hamilton Building"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.519183,
+                    -33.312518
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Journalism Department",
+                "desc": "As a first year Journ student you can't get in with your student card, but wait for anyone else and they should let you in."
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.513389,
+                    -33.315306
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Anthropology Department",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.518115,
+                    -33.312204
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Sociology Department",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.517987,
+                    -33.312051
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Philosophy Department",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.519183,
+                    -33.312071
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Great Hall",
+                "desc": "Many tests and exams are written here."
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.517421,
+                    -33.312511
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "School of Pharmacy",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.518802,
+                    -33.312948
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Mathematics Building",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.519955,
+                    -33.312652
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "IT",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.519516,
+                    -33.312849
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Biological Sciences Building",
+                "desc": "Contains Zoology, Entomology, Biotechnology, Biochemisty Microbiology"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.518276,
+                    -33.313181
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Admin building\/ Clock Tower",
+                "desc": "This is where the student fees office is, downstairs, as well as where the VC is situated. Come here for any troubles you may have with admin, and they will sort you out."
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.520433,
+                    -33.313414
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Economics Department",
+                "desc": "Entrance is from the fountain quad."
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.520063,
+                    -33.313889
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Ichthyology & Fisheries Sciences",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.519591,
+                    -33.311146
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "School of Fine Art",
+                "desc": "Art Department"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.521071,
+                    -33.312302
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Linguistics",
+                "desc": "Entrance is through the gates on Artillery Rd."
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.520151,
+                    -33.313049
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Languages Department",
+                "desc": "Formally known as the School of Languages - including isiXhosa, German, French etc. This building can be accessed from Prince Alfred Street (between the Humanities building and the Politics Department), or from Somerset Street across from Homeground Coffee Roasters. As this building is new, it is not logged on Google Maps yet."
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.520283,
+                    -33.311112
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Statistics",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.519963,
+                    -33.313185
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "History",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.520006,
+                    -33.313246
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Business School",
+                "desc": "Rhodes Investec Business School"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.520886,
+                    -33.31169
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Jacaranda Labs",
+                "desc": "A room full of computers for you to use should you wish\/need."
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.519588,
+                    -33.313174
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Accounting",
+                "desc": "Entrance from the fountain quad"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.520417,
+                    -33.313682
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Management",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.519934,
+                    -33.313878
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Psychology Department",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.51917,
+                    -33.314873
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Eden Grove",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.521806,
+                    -33.314476
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "English Department",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.519379,
+                    -33.314257
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Geography Department",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.519631,
+                    -33.314017
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "The Hanger",
+                "desc": "This is pretty much just an exam\/test venue, it is hidden behind the Journ department."
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.513003,
+                    -33.316225
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Botany Department",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.519752,
+                    -33.314373
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "GLT - General Lecture Theatre",
+                "desc": "This has an entrance from the Kaif side, as well as from Artillery Rd, it is rather sneakily hidden, but has a big wooden door from the Kaif entrance."
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.519338,
+                    -33.313719
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Alumni House",
+                "desc": "This is where you will find the communications and media people for the university."
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.520894,
+                    -33.314454
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Music & Musicology Department",
+                "desc": "Main entrance is from Somerset Street. The Beethoven Room is in this building."
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.523507,
+                    -33.315131
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Education Department",
+                "desc": "Tucked away in the corner is the Education Department, next to the big dining hall and almost attached to the Law Department."
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.523222,
+                    -33.316256
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Rhodes Chapel",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.522804,
+                    -33.315674
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Law Department",
+                "desc": "This Law Library is actually in the department itself."
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.522772,
+                    -33.316054
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Nuns' Chapel",
+                "desc": "Music lessons are often held in here"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.521828,
+                    -33.315821
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "St. Peter's Building",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.521752,
+                    -33.315319
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Student Bureau",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.521629,
+                    -33.314508
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Health Care Centre",
+                "desc": "Also known as the SAN, access from Rhodes Ave."
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.518504,
+                    -33.315938
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Geology Department",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.519049,
+                    -33.31358
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Physics and Electronics Department",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.519591,
+                    -33.31336
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Environment Education Centre",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.521162,
+                    -33.314916
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Environmental Sciences",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.523088,
+                    -33.314804
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Fine Art Graphics",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.522697,
+                    -33.314557
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Fine Art Photography",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.522482,
+                    -33.315418
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Alec Mullins Sports Hall",
+                "desc": "Exams and tests are written here, but it is also used for a lot of sport."
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.512703,
+                    -33.313055
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "HKE Department",
+                "desc": "Human Kinetics & Ergonomics - sports science"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.513379,
+                    -33.312446
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Counselling Centre",
+                "desc": "The Counselling Centre is situated on the top floor of the Bantu Stephen Biko Building in Prince alfred Street, next to the swimming pool.<br><br>Counselling services are free of charge, confidential and short term focused to encourage you to address a particular difficulty that you are experiencing at that point in time."
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.516179,
+                    -33.312739
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Fine Art: Sculpture& Painting",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.51421,
+                    -33.315924
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "South African Institutefor Aquatic Biodiversity",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.519714,
+                    -33.310177
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Barratt Lecture Theatre",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.51803,
+                    -33.31154
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Centre for Social DevelopmentCommunity Engagement",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.519237,
+                    -33.311567
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Allan Gray Female Residence",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.519687,
+                    -33.31128
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Beit Female Residence",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.518899,
+                    -33.31501
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Courtenay Latimer Dining Hall",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.518636,
+                    -33.315167
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Jameson Female Residence",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.518292,
+                    -33.315315
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Day Care Centre\u00a0",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.51847,
+                    -33.316131
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Oriel Annexe Female Residence",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.516984,
+                    -33.315664
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Dingemans Female Residence",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.516806,
+                    -33.315476
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Hobson Hall",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.516801,
+                    -33.315248
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Hobson Female Residence",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.517144,
+                    -33.315113
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Livingstone Female Residence",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.516731,
+                    -33.315579
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Jan Smuts Dining Hall\u00a0",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.516152,
+                    -33.315561
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "New House Female Residence",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.51457,
+                    -33.315638
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Chris Hani Men Residence",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.513599,
+                    -33.316498
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Adamson Male Residence",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.5150148,
+                    -33.3153059
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Jan Smuts Annexes",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.5145427,
+                    -33.3147679
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "King Field Soccer Filed",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.5136951,
+                    -33.3136069
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Allec Mullins Outdoor Basketball Court",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.5129656,
+                    -33.3129703
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Tennis Courts",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.5145749,
+                    -33.3131362
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Prospectus Field",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.5112382,
+                    -33.3123651
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Hockey Astro Turf\u00a0",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.5097201,
+                    -33.3126161
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Physics and Electronics Department",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.5198186,
+                    -33.3135217
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "DSA Offices",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.5205267,
+                    -33.3134634
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Rhodes Human Resources Office",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.5203497,
+                    -33.3133088
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Dean Of Science Office",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.5198186,
+                    -33.3144429
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Drostdy Dining \u00a0Hall\u00a0",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.5198857,
+                    -33.3124346
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Graham House Male Residence",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.519706,
+                    -33.3123023
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Debonnairs",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.5209532,
+                    -33.3111569
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Oldies 65",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.5211222,
+                    -33.3109978
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Prime Night Club",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.5212911,
+                    -33.3108722
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Oriel Female Residence",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.5179987,
+                    -33.3154123
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Milner Female Residence",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.5167555,
+                    -33.3149517
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "BiopharmaceuticsResearch Institute",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.5137675,
+                    -33.3155188
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "The Hangar",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.513274,
+                    -33.3157228
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "410 Barratt 1",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.51803,
+                    -33.31154
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "410 Barratt 2 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.5179491,
+                    -33.3115671
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Psychology Major ",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.5192795,
+                    -33.3148486
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Physics Upper ",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.519591,
+                    -33.31336
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Physics Lower",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.5196335,
+                    -33.313441
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Great Field",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.5162432,
+                    -33.3116747
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "New Department Building",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.517638,
+                    -33.3106705
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Fountain",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.520197,
+                    -33.313516
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Drostdy Arch",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.521699,
+                    -33.312742
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Drostdy Lawns",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.521125,
+                    -33.312697
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Eden Grove Red Lecture Theatre",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.521774,
+                    -33.314658
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Arts Major and Minor",
+                "desc": "Lecture Theatres part of the Arts block where you will find the History, Languages and Statistics departments."
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.520057,
+                    -33.313331
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Barratt Lecture Theatre",
+                "desc": "Usually where you will have your first year Law, Economics and Psychology lectures"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.518099,
+                    -33.311513
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Zoo Major and Minor",
+                "desc": "Lecture theatres upstairs and downstairs in the building"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.518523,
+                    -33.313221
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Chemisty Major and Minor",
+                "desc": "Lecture theatres. Entrance from Artillery Rd."
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.519118,
+                    -33.313127
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Psych Major\/Minor",
+                "desc": "Lecture theatres"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.51929,
+                    -33.314658
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Eden Grove Blue Lecture Theatre",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.521999,
+                    -33.314544
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Financial Aid Office",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.5216801,
+                    -33.3145147
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "350 Eden Grove Red",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.521999,
+                    -33.314544
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Squash Club",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.5131,
+                    -33.313226
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Swimming Pool",
+                "desc": "Open most days."
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.516168,
+                    -33.313203
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Rhodes Gym",
+                "desc": "\"Health Suite\" as it is called on the official map, the gym is attached to the HKE department."
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.513776,
+                    -33.312562
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "The Oppidan Press",
+                "desc": "Sign up with us and be a part of a student media organization that will teach you all about the media world! It is great experience if you are doing Journalism as a subject."
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.516552,
+                    -33.312515
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Basketball\/ Netball courts",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.513089,
+                    -33.312715
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "SRC Offices",
+                "desc": "Student Representative Council Offices."
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.516206,
+                    -33.312697
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Nelson Mandela Dining Hall",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.513293,
+                    -33.314598
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Ruth First House Female Residence",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.510514,
+                    -33.315759
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Guy Butler Male Residence",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.510675,
+                    -33.315077
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Victoria Mxenge House Female Residence",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.511335,
+                    -33.31523
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Adelaide Tambo House",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.511168,
+                    -33.314692
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Helen Joseph House",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.511185,
+                    -33.314463
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Stockenstroom Place (Flats)",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.511522,
+                    -33.314257
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Stanley Kidd House Male Residence",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.511818,
+                    -33.314822
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Helen Joseph Annexe",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.51237,
+                    -33.31397
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Public Service Accountability Monitor",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.515009,
+                    -33.313961
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Grounds & Gardens",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.515664,
+                    -33.313755
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Founders Hall",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.517332,
+                    -33.31362
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Matthews",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.517386,
+                    -33.313333
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Botha House Male Residence",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.518024,
+                    -33.313508
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Rhodes Library",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.518609,
+                    -33.31384
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "St. Mary \u00a0Dining Hall",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.517971,
+                    -33.314481
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "John Kotze Female Residence",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.518346,
+                    -33.314651
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Phelps Female Residence",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.517734,
+                    -33.314871
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Atherstone Female Residence",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.516415,
+                    -33.314566
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "College House Male Residence",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.516898,
+                    -33.314315
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Cory House Male Residence",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.516962,
+                    -33.313598
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Stanley Kidd Annexe\u00a0",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.5113187,
+                    -33.31488
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Olive Schreiner Female Residence",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.5181771,
+                    -33.3141022
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Lilian Britten Female Residence",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.5172169,
+                    -33.3144676
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Piet Ritief Male Residence",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.5127724,
+                    -33.3166238
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Thomas Pringle Female Residence",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.512531,
+                    -33.316059
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Walker House Female Residence",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.512118,
+                    -33.31566
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Continuing Education Centre",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.512976,
+                    -33.317072
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Margaret Smith House \u00a0Female Residence",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.512096,
+                    -33.317422
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Kimberley Dining Hall",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.511871,
+                    -33.316951
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Gold Field Men's Residence",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.510739,
+                    -33.316803
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "De Beers Male Residence",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.5108788,
+                    -33.3162024
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Ellen Khuzwayo Female Residence",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.5128046,
+                    -33.3175249
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Amina Cachalia Female Residence",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.5127,
+                    -33.3177871
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "New Female Residence",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.5125498,
+                    -33.3180493
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Calata House Male Residence",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.5115681,
+                    -33.3186209
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Centenary House Male Residence",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.509731,
+                    -33.316532
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Joe Slovo Male Residence",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.5098542,
+                    -33.3172424
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Rosa Parks Female Residence",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.5100822,
+                    -33.3175249
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "New Residence",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.51016,
+                    -33.3180762
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Counselling Centre",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.515515,
+                    -33.313084
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Counselling Centre",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.515515,
+                    -33.313084
+                ]
+            }
+        }
+    ]
+}

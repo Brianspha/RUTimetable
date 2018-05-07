@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{F1E881A4-6787-4E07-A36E-A4161C1E7F4E}|Default">
+  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/admin/Documents/GitHub/RUTimetable/RUTimetable/RUTimetable/RUTimetable.iOS/Helpers/ResourceHelper.cs" relfile="RUTimetable/RUTimetable.iOS/Helpers/ResourceHelper.cs" line="29" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <DisabledProjects>
+    <String>RUTimetable/RUTimetable.Droid/RUTimetable.Droid.csproj</String>
+  </DisabledProjects>
+</Properties>

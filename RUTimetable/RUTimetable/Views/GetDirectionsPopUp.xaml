@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="RUTimetable.GetDirectionsPopUp"
+	 xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+             xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup">
+	
+	<StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="Start"  BackgroundColor="White" x:Name="main" >
+	<autocomplete:SfAutoComplete HeightRequest="60" x:Name="autoComplete" SuggestionMode="ContainsWithCaseSensitive"/>
+		<Button Text="View On Campus Map" Clicked="GetDirections" BackgroundColor="White" HorizontalOptions="Center" VerticalOptions="End"/>
+		     <Button Text="Close"  BackgroundColor="White"  HorizontalOptions="Center" VerticalOptions="End" Clicked="OnClose"/>
+
+</StackLayout>
+
+</pages:PopupPage>

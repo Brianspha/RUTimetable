@@ -1,0 +1,53 @@
+<<<<<<< HEAD
+﻿<Properties StartupConfiguration="{F1E881A4-6787-4E07-A36E-A4161C1E7F4E}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="RUTimetable/RUTimetable.iOS/Info.plist">
+    <Files>
+      <File FileName="RUTimetable/RUTimetable.iOS/Info.plist" />
+      <File FileName="RUTimetable/RUTimetable.iOS/AppDelegate.cs" Line="24" Column="29" />
+=======
+﻿<Properties StartupConfiguration="{5E910819-CEAB-49B8-A6C1-7CCC2890E6CB}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="C:\Users\user\Documents\GitHub\RUTimetable\RUTimetable\RUTimetable\ViewModels\MapsNewViewModel.cs" relfile="RUTimetable\RUTimetable\ViewModels\MapsNewViewModel.cs" line="24" column="1" />
+      <Breakpoint file="C:\Users\user\Documents\GitHub\RUTimetable\RUTimetable\RUTimetable\Models\Semester.cs" relfile="RUTimetable\RUTimetable\Models\Semester.cs" line="11" column="1" />
+      <Breakpoint file="C:\Users\user\Documents\GitHub\RUTimetable\RUTimetable\RUTimetable\Views\GetDirectionsPopUp.xaml.cs" relfile="RUTimetable\RUTimetable\Views\GetDirectionsPopUp.xaml.cs" line="23" column="57" />
+      <Breakpoint file="C:\Users\user\Documents\GitHub\RUTimetable\RUTimetable\RUTimetable\ViewModels\TKCustomMapViewModel.cs" relfile="RUTimetable\RUTimetable\ViewModels\TKCustomMapViewModel.cs" line="41" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\..\..\..\Program Files (x86)\MSBuild\Xamarin\Android\Xamarin.Android.Common.targets">
+    <Files>
+<<<<<<< HEAD
+      <File FileName="RUTimetable\RUTimetable\ViewModels\DaySummaryViewModel.cs" Line="55" Column="30" />
+      <File FileName="RUTimetable\RUTimetable.iOS\AppDelegate.cs" Line="32" Column="39" />
+      <File FileName="RUTimetable\RUTimetable.Droid\MainActivity.cs" Line="32" Column="37" />
+      <File FileName="RUTimetable\RUTimetable\Views\GetDirectionsPopUp.xaml" Line="1" Column="1" />
+      <File FileName="RUTimetable\RUTimetable\Views\GetDirectionsPopUp.xaml.cs" Line="30" Column="4" />
+      <File FileName="RUTimetable\RUTimetable\ViewModels\TKCustomMapViewModel.cs" Line="41" Column="1" />
+      <File FileName="RUTimetable\RUTimetable\ViewModels\MapsNewViewModel.cs" Line="46" Column="1" />
+      <File FileName="RUTimetable\RUTimetable\App.xaml" Line="1" Column="1" />
+      <File FileName="RUTimetable\RUTimetable\App.xaml.cs" Line="19" Column="4" />
+      <File FileName="RUTimetable\RUTimetable.Droid\Properties\AndroidManifest.xml" Line="79" Column="12" />
+      <File FileName="RUTimetable\RUTimetable\ViewModels\TKCustomMapBindingsViewModel.cs" Line="37" Column="10" />
+      <File FileName="RUTimetable\RUTimetable.Droid\obj\Debug\android\src\android\support\design\R.java" Line="11" Column="25" />
+      <File FileName="..\..\..\..\..\Program Files (x86)\MSBuild\Xamarin\Android\Xamarin.Android.Common.targets" Line="2512" Column="70" />
+=======
+      <File FileName="RUTimetable\RUTimetable\ViewModels\FloatingActionButtonViewModel.cs" Line="50" Column="33" />
+      <File FileName="RUTimetable\RUTimetable\Views\AddNewSubjectPopUp.xaml.cs" Line="112" Column="1" />
+      <File FileName="RUTimetable\RUTimetable\ViewModels\MapsNewViewModel.cs" Line="1" Column="1" />
+      <File FileName="RUTimetable\RUTimetable\Views\AddNewSubjectPopUp.xaml" Line="8" Column="65" NotebookId="1" />
+      <File FileName="RUTimetable\RUTimetable.Droid\Resources\values\styles.xml" Line="30" Column="29" NotebookId="1" />
+>>>>>>> ea8c448c742d893a34e99657adc1ca82af2b496e
+>>>>>>> 3108f8d8bae9a43aa38affa011ebb0a66050b340
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.RUTimetable.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.D3BEC7E3-6994-45ED-B453-84B107DA9021" automaticSigning="False" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.RUTimetable.Droid PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />
+</Properties>
