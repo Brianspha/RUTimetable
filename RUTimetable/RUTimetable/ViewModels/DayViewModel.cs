@@ -21,7 +21,6 @@ namespace RUTimetable
 		bool LoadedAlready = false;
 		SemesterChangeHandler ChangeHandler;
 		public ICommand ViewOnCampus { get; private set; }
-		List<ToolbarItem> items;
 		public ObservableCollection<Subject> subjects;
 		public ObservableCollection<Subject> Subjects
 		{
@@ -30,19 +29,6 @@ namespace RUTimetable
 			{
 				subjects = value;
 				OnPropertyChanged(nameof(Subjects));
-			}
-		}
-
-		public List<ToolbarItem> Items
-		{
-			get
-			{
-				return items;
-			}
-
-			set
-			{
-				items = value;
 			}
 		}
 
@@ -60,11 +46,7 @@ namespace RUTimetable
 			subjects = new ObservableCollection<Subject>() { };
            	this.day = day;
 			ChangeHandler = new SemesterChangeHandler();
-			items = new List<ToolbarItem>();
 			this.semester = semester;
-			items.Add(new ToolbarItem("Semester 1", null, new Action(() => Semester1()), ToolbarItemOrder.Secondary, 0));
-			items.Add(new ToolbarItem("Semester 2", null, new Action(() => Semester2()), ToolbarItemOrder.Secondary, 0));
-			items.Add(new ToolbarItem("Settings", null, new Action(() => Settings()), ToolbarItemOrder.Secondary, 0));
 			Populate();
 		}
 		public int Count()

@@ -55,7 +55,14 @@ namespace RUTimetable
             ToolbarItems.Add(new ToolbarItem("Semester 1", null, new Action(() => Semester1()), ToolbarItemOrder.Secondary));
             ToolbarItems.Add(new ToolbarItem("Semester 2", null, new Action(() => Semester2()), ToolbarItemOrder.Secondary));
             ToolbarItems.Add(new ToolbarItem("Settings", null, new Action(() => SettingsAsync()), ToolbarItemOrder.Secondary));
+            ToolbarItems.Add(new ToolbarItem("Campus Map",null,new Action(()=> OpenCampusMap()),ToolbarItemOrder.Secondary));
         }
+
+        private async void OpenCampusMap()
+        {
+            await Navigation.PushPopupAsync(new GetDirectionsPopUp());
+        }
+
         public int CheckPlatform()
 		{
 			return Device.RuntimePlatform == Device.iOS ? 1 : 1;

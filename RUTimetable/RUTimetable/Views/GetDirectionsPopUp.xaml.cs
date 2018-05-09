@@ -16,7 +16,7 @@ namespace RUTimetable
 		public GetDirectionsPopUp()
 		{
 			InitializeComponent();
-			db = new RealmDataBase();
+			db = new RealmDataBase(true);
 			autoComplete.DataSource = db.GetVenues();
 			autoComplete.SuggestionMode = Syncfusion.SfAutoComplete.XForms.SuggestionMode.Contains;
 			model = new MapsNewViewModel();

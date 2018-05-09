@@ -5,7 +5,7 @@ using Realms;
 using RUTimetable;
 using Timetable;
 using RUTimetable.Models;
-
+using Realms.Sync;
 namespace RUTimetable
 {
 	public class RealmDataBase
@@ -14,15 +14,19 @@ namespace RUTimetable
 		Student student;
 		Realm db;
 		public bool LoadedSemester1 = false;
-		/// <summary>
-		/// Initializes a new instance of the <see cref="T:RealmDataBase"/> class.
-		/// </summary>
-		public RealmDataBase()
+        private bool v;
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="T:RealmDataBase"/> class.
+        /// </summary>
+        public RealmDataBase()
 		{
 			student = new Student();
 			try
 			{
+  
 				db = Realm.GetInstance();//open realm db
+                
 			}
 			catch (Realms.Exceptions.RealmMigrationNeededException)
 			{
@@ -34,13 +38,31 @@ namespace RUTimetable
 			}
 		}
 
+        public RealmDataBase(bool SYNCLocations)
+        {
+            try
+            {
+
+                db = Realm.GetInstance();//open realm db
+
+            }
+            catch (Realms.Exceptions.RealmMigrationNeededException)
+            {
+
+            }
+            catch (Exception e)
+            {
+
+            }
+        }
 
 
-		/// <summary>
-		/// Gets the student.
-		/// </summary>
-		/// <returns>The student.</returns>
-		public Student GetStudent()
+
+        /// <summary>
+        /// Gets the student.
+        /// </summary>
+        /// <returns>The student.</returns>
+        public Student GetStudent()
 		{
 			return db.All<Student>().ToList().Count > 0 ? db.All<Student>().ToList()[0] : null;
 		}
@@ -272,12 +294,38 @@ namespace RUTimetable
 			myList.Add(student.WeekSemester2.ToList());
 			return myList;
 		}
+        /// <summary>
+        /// Creates a user to be used for syncing the local database with the cloud database
+        /// </summary>
+        /// <returns></returns>
+        //private User CreateUser()
+        //{
+        //    //var cacheConfig = new RealmConfiguration("LoginCache.realm")
+        //    //{
+        //    //    ObjectClasses = new[] { typeof(LoginDetails) }
+        //    //};
+        //    //db = Realm.GetInstance(cacheConfig);
+        //    //var Logindetails = db.All<LoginDetails>().ToList().FirstOrDefault();
+        //    //if (Logindetails == null)
+        //    //{
+        //    //    Logindetails = new LoginDetails
+        //    //    {
+        //    //        ServerUrl = Constants.SyncHost
+        //    //    };
+
+        //    //    db.Write(() => db.Add(Logindetails));
+        //    //}
+        //  //  return Logindetails;
+
+        //}
 		/// <summary>
 		/// Stores all the Lecture Venue locations on Rhodes Campus.
 		/// </summary>
 		/// <param name="locs">Locs.</param>
 		public void StoreVenueLocations(List<VenueLocation> locs)
 		{
+            
+            var user = User.Current;
 			db.Write(() => {
 				var loc =db.All<VenueData>().ToList();
 				if (loc.Count == 0) //first time app is used create a new VenueData object
