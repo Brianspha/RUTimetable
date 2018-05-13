@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using Syncfusion;
 using Xamarin.Forms;
-
+using Syncfusion.XForms.TabView;
+using Xamarin.Forms.Xaml;
 namespace RUTimetable
 {
-	public partial class DaySummary : ContentPage
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class DaySummary : ContentView
 	{
 		DaySummaryViewModel model;
         bool CreateCarouselView;
@@ -32,10 +34,11 @@ namespace RUTimetable
 					}
 
 				};
-                Content = contentPage;
+                 Content = contentPage;
 			}
 			else
 			{
+                
 				BindingContext = model;
             }
 				//run every 45 mins
@@ -93,13 +96,6 @@ namespace RUTimetable
                
             });
 	
-		}
-		protected override void OnAppearing()
-		{
-			Title = "Day Summary";
-			RefreshUI();
-	
-				
 		}
 	}
 }

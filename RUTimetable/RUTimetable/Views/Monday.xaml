@@ -1,16 +1,17 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage            xmlns="http://xamarin.com/schemas/2014/forms"
+<ContentView            xmlns="http://xamarin.com/schemas/2014/forms"
                         xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
 		                xmlns:local="clr-namespace:RUTimetable"
                         x:Class="RUTimetable.Monday"
                         xmlns:control="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.CarouselView"
-		                Title="Monday"
-                        Icon="M.png">
+                        xmlns:sync="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
+
+
     <StackLayout Orientation="Vertical">
-        <ListView x:Name="listView" 
-             HasUnevenRows="true" 
-              ItemsSource="{Binding Subjects}" CachingStrategy="RecycleElement">
-            <ListView.ItemTemplate>
+        <sync:SfListView x:Name="listView" 
+              ItemsSource="{Binding Subjects}" IsStickyFooter="true" 
+                                 AutoFitMode="Height">
+            <sync:SfListView.ItemTemplate>
                 <DataTemplate>
                     <local:ExtendedViewCell SelectedBackgroundColor="White">
                         <local:ExtendedViewCell.View>
@@ -18,7 +19,7 @@
                         </local:ExtendedViewCell.View>
                     </local:ExtendedViewCell>
                 </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+            </sync:SfListView.ItemTemplate>
+        </sync:SfListView>
     </StackLayout>
-</ContentPage>
+</ContentView>

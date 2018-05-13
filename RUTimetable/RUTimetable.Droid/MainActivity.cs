@@ -36,11 +36,11 @@ namespace RUTimetable.Droid
 			if (db.FirstRun())
 			{
 				var temp = new ResourceHelper(this.ApplicationContext, "RhodesMap.geojson", "Venues.txt");
-				LoadApplication(new App(temp.ReadLocalFile(), temp.GetParsedVenuesWithSubjects(),false));
+				LoadApplication(new App(temp.ReadLocalFile(), temp.GetParsedVenuesWithSubjects()));
 			}
 			else
 			{
-				LoadApplication(new App(false));
+				LoadApplication(new App());
 			}
 			await GetLocationPermissionAsync();
 		}

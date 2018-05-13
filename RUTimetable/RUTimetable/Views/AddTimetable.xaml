@@ -1,18 +1,17 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 	x:Class="RUTimetable.AddTimetable"
-		Title="Add Timetable"
              xmlns:control="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.CarouselView"
 
 	>
-	<ContentPage.Content>
+	<ContentView.Content>
 		<StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
 			<Entry x:Name="StudentNumber" Placeholder="Enter Student Number e.g. g110000" PlaceholderColor="Black" FontSize="13" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
 			<Button BackgroundColor="White" x:Name="Get" Text="Get Timetable" Command="{Binding addTimetable}" CommandParameter="{Binding Source={x:Reference StudentNumber}, Path=Text}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
            
     </StackLayout>
-	</ContentPage.Content>
+	</ContentView.Content>
      
 
 
-</ContentPage>
+</ContentView>

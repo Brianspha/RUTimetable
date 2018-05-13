@@ -4,10 +4,13 @@ using Xamarin.Forms;
 using Rg.Plugins;
 using Rg.Plugins.Popup.Extensions;
 using RUTimetable.Views;
+using Syncfusion;
+using Xamarin.Forms.Xaml;
 
+[assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace RUTimetable
 {
-    public partial class Monday : ContentPage
+    public partial class Monday : ContentView
     {
         DayViewModel model;
         FloatingActionButtonViewModel viewModel;
@@ -55,63 +58,11 @@ namespace RUTimetable
                 Device.BeginInvokeOnMainThread(() => RefreshUI());
                 return true;
             });
-            ToolbarItems.Add(new ToolbarItem("Semester 1", null, new Action(() => Semester1()), ToolbarItemOrder.Secondary, CheckPlatform()));
-            ToolbarItems.Add(new ToolbarItem("Semester 2", null, new Action(() => Semester2()), ToolbarItemOrder.Secondary, CheckPlatform()));
-            ToolbarItems.Add(new ToolbarItem("Settings", null, new Action(() => SettingsAsync()), ToolbarItemOrder.Secondary, CheckPlatform()));
-            ToolbarItems.Add(new ToolbarItem("Campus Map", null, new Action(() => OpenCampusMap()), ToolbarItemOrder.Secondary));
-        }
+          
+    }
         private async void OpenCampusMap()
         {
             await Navigation.PushPopupAsync(new GetDirectionsPopUp());
-        }
-        public Monday(bool createCarouselView)
-        {
-            InitializeComponent();
-            carouselView = new CarouselPage();
-            this.CreateCarouselView = createCarouselView;
-            InitializeComponent();
-            viewModel = new FloatingActionButtonViewModel(Navigation);
-            ChangeHandler = new SemesterChangeHandler();
-            model = new DayViewModel("Monday", DateTime.UtcNow.Month > 6 ? 2 : 1);
-            if (model.Count() == 0)
-            {
-                var contentPage = new StackLayout
-                {
-                    HorizontalOptions = LayoutOptions.FillAndExpand,
-                    VerticalOptions = LayoutOptions.CenterAndExpand,
-                    Orientation = StackOrientation.Vertical,
-                    Children = {
-                        new Label{
-                            Text="No Time table Yet or You are a Postgrad student",
-                            VerticalTextAlignment=TextAlignment.Center,
-                            HorizontalTextAlignment=TextAlignment.Center,
-                            VerticalOptions=LayoutOptions.FillAndExpand,
-                            HorizontalOptions=LayoutOptions.CenterAndExpand
-                        }
-                    }
-                };
-                viewModel.AddContentPageToAbsoluteLayOut(contentPage);
-                Content = viewModel.GetLayOut();
-            }
-            else
-            {
-                viewModel.AddDayLayOutToAbsoluteLayOut(listView);
-                Content = viewModel.GetLayOut();
-                BindingContext = model;
-            }
-            Device.StartTimer(TimeSpan.FromSeconds(1), () => {
-                Device.BeginInvokeOnMainThread(() => RefreshUI());
-                return true;
-            });
-            ToolbarItems.Add(new ToolbarItem("Semester 1", null, new Action(() => Semester1()), ToolbarItemOrder.Secondary));
-            ToolbarItems.Add(new ToolbarItem("Semester 2", null, new Action(() => Semester2()), ToolbarItemOrder.Secondary));
-            ToolbarItems.Add(new ToolbarItem("Settings", null, new Action(() => SettingsAsync()), ToolbarItemOrder.Secondary));
-
-            carouselView.Children.Add(this);
-            carouselView.Children.Add(new AddTimetable());
-            Content = carouselView.CurrentPage.Content;
-
-
         }
 
         public int CheckPlatform()
@@ -135,14 +86,6 @@ namespace RUTimetable
                     viewModel.AddDayLayOutToAbsoluteLayOut(listView);
                     Content = viewModel.GetLayOut();
                     BindingContext = model;
-                    if (CreateCarouselView)
-                    {
-                        carouselView.Children.Clear();
-                        carouselView.Children.Add(this);
-                        carouselView.Children.Add(new AddTimetable());
-                        Content = carouselView.CurrentPage.Content;
-                    }
-
                 }
                 else
                 {
@@ -151,13 +94,6 @@ namespace RUTimetable
                     viewModel.AddDayLayOutToAbsoluteLayOut(listView);
                     Content = viewModel.GetLayOut();
                     BindingContext = model;
-                    if (CreateCarouselView)
-                    {
-                        carouselView.Children.Clear();
-                        carouselView.Children.Add(this);
-                        carouselView.Children.Add(new AddTimetable());
-                        Content = carouselView.CurrentPage.Content;
-                    }
                 }
 
             });
@@ -197,16 +133,6 @@ namespace RUTimetable
 		public async void SettingsAsync()
         {
             await Navigation.PushPopupAsync(new Settings());
-        }
-
-        /// <summary>
-        /// Ons the appearing.
-        /// </summary>
-        protected override void OnAppearing()
-        {
-            Title = "Monday";
-            Icon = "M.png";
-            RefreshUI();
         }
 
     }

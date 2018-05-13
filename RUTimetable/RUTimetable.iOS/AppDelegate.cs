@@ -19,9 +19,9 @@ using Xamarin.Forms.Maps;
 using TK.CustomMap;
 using Xamarin;
 using TK.CustomMap.iOSUnified;
-using RUTimetable.Helpers;
 using Rg.Plugins;
 using RUTimetableIOS.Helpers;
+using Syncfusion.SfRadialMenu.XForms.iOS;
 
 namespace RUTimetableIOS.iOS
 {
@@ -46,13 +46,16 @@ namespace RUTimetableIOS.iOS
             var renderer = new TKCustomMapRenderer();
             var temp = new ResourceHelper();
 			var db = new RealmDataBase();
-			if (db.FirstRun())
+            Syncfusion.XForms.iOS.TabView.SfTabViewRenderer.Init();
+            Syncfusion.ListView.XForms.iOS.SfListViewRenderer.Init();
+            SfRadialMenuRenderer.Init();
+            if (db.FirstRun())
 			{
-                LoadApplication(new App(temp.Process(), temp.GetParsedVenuesWithSubjects(), true));
+                LoadApplication(new App(temp.Process(), temp.GetParsedVenuesWithSubjects()));
 			}
 			else
 			{
-				LoadApplication(new App(true));
+				LoadApplication(new App());
 			}
             return base.FinishedLaunching(app, options);
         }

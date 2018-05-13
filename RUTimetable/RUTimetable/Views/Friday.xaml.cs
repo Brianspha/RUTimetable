@@ -4,10 +4,13 @@ using Xamarin.Forms;
 using Rg.Plugins;
 using Rg.Plugins.Popup.Extensions;
 using RUTimetable.Views;
+using Xamarin.Forms.Xaml;
 
 namespace RUTimetable
 {
-    public partial class Friday : ContentPage
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+
+    public partial class Friday : ContentView
     {
         DayViewModel model;
         FloatingActionButtonViewModel viewModel;
@@ -51,11 +54,7 @@ namespace RUTimetable
                 Device.BeginInvokeOnMainThread(() => RefreshUI());
                 return true;
             });
-            ToolbarItems.Add(new ToolbarItem("Semester 1", null, new Action(() => Semester1()), ToolbarItemOrder.Secondary));
-            ToolbarItems.Add(new ToolbarItem("Semester 2", null, new Action(() => Semester2()), ToolbarItemOrder.Secondary));
-            ToolbarItems.Add(new ToolbarItem("Settings", null, new Action(() => SettingsAsync()), ToolbarItemOrder.Secondary));
-            ToolbarItems.Add(new ToolbarItem("Campus Map", null, new Action(() => OpenCampusMap()), ToolbarItemOrder.Secondary));
-        }
+          }
 
         private async void OpenCampusMap()
         {
@@ -79,19 +78,20 @@ namespace RUTimetable
 				if (anythingToload.semester > 0)
 				{
 					model = new DayViewModel("Friday", anythingToload.semester);
-					viewModel.AddDayLayOutToAbsoluteLayOut(listView);
+                    viewModel = new FloatingActionButtonViewModel(Navigation);
+                    viewModel.AddDayLayOutToAbsoluteLayOut(listView);
 					Content = viewModel.GetLayOut();
 					BindingContext = model;
 				}
-				else
-				{
-					model.Populate();
-					if (model.Count() == 0) return;
-					viewModel.AddDayLayOutToAbsoluteLayOut(listView);
-					Content = viewModel.GetLayOut();
-					BindingContext = model;
-				}
-			});
+                else
+                {
+                    model.Populate();
+                    if (model.Count() == 0) return;
+                    viewModel.AddDayLayOutToAbsoluteLayOut(listView);
+                    Content = viewModel.GetLayOut();
+                    BindingContext = model;
+                }
+            });
 		}        void Handle_ItemTapped(object sender, Xamarin.Forms.ItemTappedEventArgs e)
         {
             var s = listView.SelectedItem;
@@ -127,16 +127,6 @@ namespace RUTimetable
 		public async void SettingsAsync()
         {
             await Navigation.PushPopupAsync(new Settings());
-        }
-
-        /// <summary>
-        /// Ons the appearing.
-        /// </summary>
-        protected override void OnAppearing()
-        {
-            Title = "Friday";
-            Icon = "F.png";
-            RefreshUI();
         }
 
     }

@@ -36,6 +36,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Classes\SlotIndexFontConverter.cs" />
     <Compile Include="Classes\VenueFileReader.cs" />
     <Compile Include="Classes\RemovePracorTutorialKeyWord.cs" />
     <Compile Include="Interfaces\ISaveAndLoad.cs" />
@@ -82,12 +83,10 @@
     <Compile Include="Pages\AddTimeTablePage.cs" />
     <Compile Include="Tabbed View\MainPage.cs" />
     <Compile Include="ViewModels\TKCustomMapBindingsViewModel.cs" />
-    <Compile Include="IOSAppView.xaml.cs">
-      <DependentUpon>IOSAppView.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Views\Carouselview.xaml.cs">
       <DependentUpon>Carouselview.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\DaySummary.xaml.cs" />
     <Compile Include="Views\Settings.xaml.cs">
       <DependentUpon>Settings.xaml</DependentUpon>
     </Compile>
@@ -106,7 +105,6 @@
     <Compile Include="Views\AddTimetable.xaml.cs" />
     <Compile Include="Views\CardViewTemplate.xaml.cs" />
     <Compile Include="Views\CardViewTemplateDaySummary.cs" />
-    <Compile Include="Views\DaySummary.xaml.cs" />
     <Compile Include="Views\Friday.xaml.cs" />
     <Compile Include="Views\LectureVenueLocatorPage.xaml.cs" />
     <Compile Include="Views\Monday.xaml.cs" />
@@ -217,8 +215,26 @@
     <Reference Include="Splat, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Splat.2.0.0\lib\netstandard1.1\Splat.dll</HintPath>
     </Reference>
+    <Reference Include="Syncfusion.Core.XForms, Version=16.1451.0.37, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Syncfusion.Xamarin.Core.16.1.0.37\lib\portable-win+net45+wp80+win81+wpa81\Syncfusion.Core.XForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.DataSource.Portable, Version=16.1451.0.37, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Syncfusion.Xamarin.DataSource.16.1.0.37\lib\portable-win+net45+wp80+win81+wpa81\Syncfusion.DataSource.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.GridCommon.Portable, Version=16.1451.0.37, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Syncfusion.Xamarin.GridCommon.16.1.0.37\lib\portable-win+net45+wp80+win81+wpa81\Syncfusion.GridCommon.Portable.dll</HintPath>
+    </Reference>
     <Reference Include="Syncfusion.SfAutoComplete.XForms, Version=16.1451.0.37, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Syncfusion.Xamarin.SfAutoComplete.16.1.0.37\lib\portable-win+net45+wp80+win81+wpa81\Syncfusion.SfAutoComplete.XForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfListView.XForms, Version=16.1451.0.37, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Syncfusion.Xamarin.SfListView.16.1.0.37\lib\portable-win+net45+wp80+win81+wpa81\Syncfusion.SfListView.XForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfRadialMenu.XForms, Version=16.1451.0.37, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Syncfusion.Xamarin.SfRadialMenu.16.1.0.37\lib\portable-win+net45+wp80+win81+wpa81\Syncfusion.SfRadialMenu.XForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfTabView.XForms, Version=16.1451.0.37, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Syncfusion.Xamarin.SfTabView.16.1.0.37\lib\portable-win+net45+wp80+win81+wpa81\Syncfusion.SfTabView.XForms.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Http.Extensions">
       <HintPath>..\..\packages\Microsoft.Net.Http.2.2.29\lib\portable-net45+win8+wpa81\System.Net.Http.Extensions.dll</HintPath>
@@ -313,12 +329,6 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\Settings.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="IOSAppView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

@@ -16,56 +16,24 @@ namespace RUTimetable
         //Used by Notifications Plugin
         public static bool IsInBackgrounded { get; private set; }
 
-        public App(GeoJSONData dat,List<VenueLocation> venues,bool fromIOS)
-		{
-			InitializeComponent();
-            ChangeHandler = new SemesterChangeHandler();
-			GmsPlace.Init("AIzaSyCjMY_194mgeHLsyhlPre7kZ-UVXHCCt0o");
-			GmsDirection.Init("AIzaSyCJN3Cd-Sp1a5V5OnkvTR-Gqhx7A3S-b6M");
-			var temp =new GEOJSONTOJSONParser(dat,venues);//the Dat file sent by each platform to the parent App
-			temp.Process();
-            if (fromIOS)
-            {
-                var carouselView = new CarouselPage();
-                carouselView.Children.Add(new DaySummary());
-                carouselView.Children.Add(new AddTimetable());
-                carouselView.Children.Add(new Monday());
-                carouselView.Children.Add(new Tuesday());
-                carouselView.Children.Add(new Wednesday());
-                carouselView.Children.Add(new Thursday());
-                carouselView.Children.Add(new Friday());
-                carouselView.ToolbarItems.Add(new ToolbarItem("Semester 1", null, new Action(() => Semester1()), ToolbarItemOrder.Secondary));
-                carouselView.ToolbarItems.Add(new ToolbarItem("Semester 2", null, new Action(() => Semester2()), ToolbarItemOrder.Secondary));
-                carouselView.ToolbarItems.Add(new ToolbarItem("Settings", null, new Action(() => SettingsAsync()), ToolbarItemOrder.Secondary));
-                MainPage = carouselView;
-            }
-			else MainPage = new MainPageCS();
-		}
-		public App(bool fromIOS)
-		{
+        public App(GeoJSONData dat, List<VenueLocation> venues)
+        {
             InitializeComponent();
             ChangeHandler = new SemesterChangeHandler();
             GmsPlace.Init("AIzaSyCjMY_194mgeHLsyhlPre7kZ-UVXHCCt0o");
             GmsDirection.Init("AIzaSyCJN3Cd-Sp1a5V5OnkvTR-Gqhx7A3S-b6M");
-            if (fromIOS)
-            {
-                var carouselView = new CarouselPage();
-                carouselView.Children.Add(new DaySummary());
-                carouselView.Children.Add(new AddTimetable());
-                carouselView.Children.Add(new Monday());
-                carouselView.Children.Add(new Tuesday());
-                carouselView.Children.Add(new Wednesday());
-                carouselView.Children.Add(new Thursday());
-                carouselView.Children.Add(new Friday());
-                carouselView.ToolbarItems.Add(new ToolbarItem("Semester 1", null, new Action(() => Semester1()), ToolbarItemOrder.Secondary));
-                carouselView.ToolbarItems.Add(new ToolbarItem("Semester 2", null, new Action(() => Semester2()), ToolbarItemOrder.Secondary));
-                carouselView.ToolbarItems.Add(new ToolbarItem("Settings", null, new Action(() => SettingsAsync()), ToolbarItemOrder.Secondary));
-                MainPage = carouselView;
-            }
-            else MainPage = new MainPageCS();
-		}
-
-
+            var temp = new GEOJSONTOJSONParser(dat, venues);//the Dat file sent by each platform to the parent App
+            temp.Process();
+            MainPage = new MainPageCS();
+        }
+        public App()
+        {
+            InitializeComponent();
+            ChangeHandler = new SemesterChangeHandler();
+            GmsPlace.Init("AIzaSyCjMY_194mgeHLsyhlPre7kZ-UVXHCCt0o");
+            GmsDirection.Init("AIzaSyCJN3Cd-Sp1a5V5OnkvTR-Gqhx7A3S-b6M");
+            MainPage = new MainPageCS();
+        }
 		protected override void OnStart()
 		{
 			// Handle when your app starts

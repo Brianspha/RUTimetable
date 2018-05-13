@@ -1,6 +1,10 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-	xmlns:local="clr-namespace:RUTimetable;assembly=RUTimetable"	x:Class="RUTimetable.MainPage">
-<local:AddTimetable />
-<local:Monday/>
-</TabbedPage>
+<local:Tabbedview xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:local="clr-namespace:RUTimetable;assembly=RUTimetable"	x:Class="RUTimetable.MainPage"
+                xmlns:tabview="clr-namespace:Syncfusion.XForms.TabView;assembly=Syncfusion.SfTabView.XForms"
+>
+    <local:Tabbedview.Content>
+
+    </local:Tabbedview.Content>
+    
+</local:Tabbedview>

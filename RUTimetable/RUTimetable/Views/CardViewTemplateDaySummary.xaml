@@ -3,12 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RUTimetable.CardViewTemplateDaySummary">
   <Frame IsClippedToBounds="True"
-         HasShadow="True"
-         BackgroundColor="White"  >
+         HasShadow="True" >
     <Frame.OutlineColor>
       <OnPlatform x:TypeArguments="Color"
-                  Android="Gray"
-                  iOS="Gray"/>
+                  Android="Transparent"
+                  iOS="Transparent"/>
     </Frame.OutlineColor>
     <Frame.Margin>
       <OnPlatform x:TypeArguments="Thickness"
@@ -48,7 +47,7 @@
 				<Switch x:Name="Switch" IsToggled="{Binding IsReminderSet}" IsEnabled="false"  HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Toggled="SwitchToggled" />  
     </StackLayout>
 			<StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-			<Button   Clicked="ViewOnCampusMap" BackgroundColor="White" x:Name="View" Text="View On Campus Map" HorizontalOptions="Center"  VerticalOptions="Center" FontSize="16"   TextColor="Black" >
+			<Button   Clicked="ViewOnCampusMap" BackgroundColor="White" x:Name="View" Text="View On Campus Map" FontSize="16"   TextColor="Black" >
 			</Button>
 				</StackLayout>
 			</StackLayout>

@@ -7,7 +7,9 @@ using RUTimetable;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 
-[assembly: ExportRenderer(typeof(ExtendedViewCell), typeof(ExtendedViewCellRenderer))]
+#pragma warning disable CS0436 // Type conflicts with imported type
+[assembly: ExportRenderer(typeof(ExtendedViewCell), target: typeof(ExtendedViewCellRenderer))]
+#pragma warning restore CS0436 // Type conflicts with imported type
 namespace RUTimetable
 {
 	public class ExtendedViewCellRenderer : ViewCellRenderer

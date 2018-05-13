@@ -5,10 +5,12 @@ using Xamarin.Forms;
 using Acr.UserDialogs;
 using Rg.Plugins.Popup.Extensions;
 using RUTimetable.Views;
+using Xamarin.Forms.Xaml;
 
 namespace RUTimetable
 {
-	public partial class AddTimetable : ContentPage
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class AddTimetable : ContentView
 	{
 		ActivityIndicator loading;
         SemesterChangeHandler ChangeHandler;
@@ -18,10 +20,6 @@ namespace RUTimetable
 			InitializeComponent();
 			BindingContext = new AddTimetableViewModel();
             ChangeHandler = new SemesterChangeHandler();
-            ToolbarItems.Add(new ToolbarItem("Semester 1", null, new Action(() => Semester1()), ToolbarItemOrder.Secondary, CheckPlatform()));
-            ToolbarItems.Add(new ToolbarItem("Semester 2", null, new Action(() => Semester2()), ToolbarItemOrder.Secondary, CheckPlatform()));
-            ToolbarItems.Add(new ToolbarItem("Settings", null, new Action(() => Settings()), ToolbarItemOrder.Secondary, CheckPlatform()));
-            ToolbarItems.Add(new ToolbarItem("Campus Map", null, new Action(() => OpenCampusMap()), ToolbarItemOrder.Secondary));
         }
         private async void OpenCampusMap()
         {
@@ -57,10 +55,6 @@ namespace RUTimetable
 		{
             await Navigation.PushPopupAsync(new Settings());
         }
-        protected override void OnAppearing()
-		{
-			Title = "Add Timetable";
-		}
 
 	}
 }

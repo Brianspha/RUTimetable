@@ -1,23 +1,25 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-      xmlns:local="clr-namespace:RUTimetable"
-		x:Class="RUTimetable.Wednesday"
-             xmlns:control="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.CarouselView"
+<ContentView            xmlns="http://xamarin.com/schemas/2014/forms"
+                        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		                xmlns:local="clr-namespace:RUTimetable"
+                        x:Class="RUTimetable.Wednesday"
+                        xmlns:control="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.CarouselView"
+                        xmlns:sync="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
 
-		Title="Wednesday">
-		 <StackLayout Orientation="Vertical">
-    <ListView x:Name="listView" 
-             HasUnevenRows="true" 
-              ItemsSource="{Binding Subjects}" CachingStrategy="RecycleElement">
-      <ListView.ItemTemplate>
-<DataTemplate>
-		<local:ExtendedViewCell >
-						<local:ExtendedViewCell.View>
-			<local:CardViewTemplate/>
-							</local:ExtendedViewCell.View>
-			</local:ExtendedViewCell>
-        </DataTemplate>
-      </ListView.ItemTemplate>
-    </ListView>
-  </StackLayout>
-</ContentPage>
+
+    <StackLayout Orientation="Vertical">
+        <sync:SfListView x:Name="listView" 
+              ItemsSource="{Binding Subjects}" IsStickyFooter="true" 
+                                 AutoFitMode="Height">
+            <sync:SfListView.ItemTemplate>
+                <DataTemplate>
+                    <local:ExtendedViewCell SelectedBackgroundColor="White">
+                        <local:ExtendedViewCell.View>
+                            <local:CardViewTemplate/>
+                        </local:ExtendedViewCell.View>
+                    </local:ExtendedViewCell>
+                </DataTemplate>
+            </sync:SfListView.ItemTemplate>
+        </sync:SfListView>
+    </StackLayout>
+</ContentView>
